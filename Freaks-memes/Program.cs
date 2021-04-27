@@ -17,10 +17,10 @@ namespace Freaks_memes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1() 
+            Application.Run(new Form1()
             { 
                 WindowState = FormWindowState.Maximized,
-                BackColor = Color.DimGray
+                BackColor = Color.Gray
             });
         }
     }
