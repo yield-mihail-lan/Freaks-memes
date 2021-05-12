@@ -7,4 +7,4 @@ C:\Users\1\source\repos\Freaks-memes\obj\Debug\Freaks-memes.csproj.GenerateResou
 C:\Users\1\source\repos\Freaks-memes\obj\Debug\Freaks-memes.csproj.CoreCompileInputs.cache
 C:\Users\1\source\repos\Freaks-memes\obj\Debug\Freaks-memes.exe
 C:\Users\1\source\repos\Freaks-memes\obj\Debug\Freaks-memes.pdb
-C:\Users\1\source\repos\Freaks-memes\obj\Debug\Freaks_memes.Form1.resources
+C:\Users\1\source\repos\Freaks-memes\obj\Debug\Freaks_memes.ChooseFighterForm.resources
