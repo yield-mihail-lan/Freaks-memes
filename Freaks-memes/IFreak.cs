@@ -9,8 +9,9 @@ namespace Freaks_memes
         double Velocity { get; set; }
         double HitReboot { get; set; }
         double SkillReboot { get; set; }
-        double X { get; set; }
-        double Y { get; set; }
-        void Act(Keys key, IFreak opponent);
+        int X { get; set; }
+        int Y { get; set; }
+        FreakCommand Act(int x, int y);
+        string GetSkinFile();
     }
 }

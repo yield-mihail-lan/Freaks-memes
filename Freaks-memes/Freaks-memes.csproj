@@ -58,12 +58,18 @@
     <Compile Include="ChooseOpponentForm.Designer.cs">
       <DependentUpon>ChooseOpponentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FreakAnimation.cs" />
+    <Compile Include="FreakCommand.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="GameState.cs" />
+    <Compile Include="IFreak.cs" />
     <Compile Include="Ring.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ring.Designer.cs">
       <DependentUpon>Ring.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stas.cs" />
     <Compile Include="StasInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,7 @@
     <Content Include="Images\baretsky.bmp" />
     <Content Include="Images\natamorpeh.bmp" />
     <Content Include="Images\victorpuzo.bmp" />
+    <Content Include="Skinы\baretskyskin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

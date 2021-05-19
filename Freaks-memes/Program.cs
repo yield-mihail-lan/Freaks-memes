@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,11 +17,7 @@ namespace Freaks_memes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChooseFighterForm()
-            { 
-                WindowState = FormWindowState.Maximized,
-                BackColor = Color.Gray
-            });
+            Application.Run(new Ring());
         }
     }
 }

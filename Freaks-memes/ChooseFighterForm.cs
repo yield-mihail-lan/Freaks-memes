@@ -72,7 +72,7 @@ namespace Freaks_memes
             var flag = new CheckBox
             {
                 Text = "1 уровень",
-                ForeColor = Color.Green,
+                ForeColor = Color.LightGreen,
                 Font = new Font("Arial", 12, FontStyle.Bold),
                 Location = new Point(ClientSize.Width / 6, ClientSize.Height / 6),
                 TextAlign = ContentAlignment.MiddleCenter,
@@ -152,7 +152,7 @@ namespace Freaks_memes
                 else
                 {
                     flag.Text = "1 уровень";
-                    flag.ForeColor = Color.Green;
+                    flag.ForeColor = Color.LightGreen;
                     //Add remembering
                 }
             };

@@ -23,11 +23,11 @@ namespace Freaks_memes
                 Dock = DockStyle.Fill
             };
 
-            //create and add GIF
-            //var skin = new Label
-            //{
-            //    Image = Image.FromFile("C://Users//1//source//repos//Freaks-memes//Images/baretsky.bmp")
-            //};
+            var skin = new Label
+            {
+                Image = Image.FromFile("C://Users//1//source//repos//Freaks-memes//Skinы/baretskyskin.png"),
+                Dock = DockStyle.Fill
+            };
 
             var statistic = new Label
             {
@@ -243,7 +243,7 @@ namespace Freaks_memes
 
             table.Controls.Add(button, 0, 0);
             table.Controls.Add(name, 1, 0);
-            //table.Controls.Add(skin, 2, 0);
+            table.Controls.Add(skin, 2, 0);
             table.Controls.Add(statistic, 0, 1);
             table.Controls.Add(easy, 1, 1);
             table.Controls.Add(hard, 2, 1);

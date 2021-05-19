@@ -14,36 +14,44 @@ namespace Freaks_memes
         public double Velocity { get; set; }
         public double HitReboot { get; set; }
         public double SkillReboot { get; set; }
-        public double X { get; set; }
-        public double Y { get; set; }
-        public Stas(double health, double strength, double velocity, double hitReboot, double skillReboot, double x, double y)
-        {
+        public int X { get; set; }
+        public int Y { get; set; }
 
+        public Stas(int x, int y)
+        {
+            (X, Y) = (x, y);
         }
 
-        public void Act(Keys key, IFreak opponent)
+        public FreakCommand Act(int x, int y)
         {
-            switch (key)
+            var cmd = new FreakCommand();
+            switch (Game.KeyPressed)
             {
                 case Keys.Up:
-                    if (Y - 1 >= 0) Y--;
+                    if (Y - 1 >= 0) cmd.DeltaY--;
                     break;
                 case Keys.Down:
-                    if (Y + 1 <= 500) Y++;
+                    if (Y + 1 <= 600) cmd.DeltaY += 3;
                     break;
                 case Keys.Left:
-                    if (X - 1 >= 0) X--;
+                    if (X - 1 >= 0) cmd.DeltaX--;
                     break;
                 case Keys.Right:
-                    if (X + 1 <= 1000) X++;
+                    if (X + 1 <= 1000) cmd.DeltaX++;
                     break;
-                case Keys.Space:
+                default:
+                    if (Y + 1 <= 600) cmd.DeltaY += 2;
+                    break;
+                /*case Keys.Space:
                     //hit
                     break;
                 case Keys.B:
                     //skill
-                    break;
+                    break;*/
             }
+            return cmd;
         }
+
+        public string GetSkinFile() => "baretskyskin.png";
     }
 }
