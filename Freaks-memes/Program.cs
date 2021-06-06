@@ -17,7 +17,11 @@ namespace Freaks_memes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ring());
+            Application.Run(new ChooseFighterForm
+            {
+                BackColor = Color.Gray,
+                WindowState = FormWindowState.Maximized
+            });
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Freaks_memes
 {
@@ -40,7 +41,7 @@ namespace Freaks_memes
                 ForeColor = Color.Red,
                 Dock = DockStyle.Fill,
                 Size = new Size(ClientSize.Width / 2, ClientSize.Height / 3),
-                Image = Image.FromFile("C://Users//1//source//repos//Freaks-memes//Images/baretsky.bmp"),
+                Image = Image.FromFile(Directory.GetCurrentDirectory() + "//Images/baretsky.bmp"),
                 ImageAlign = ContentAlignment.TopCenter,
                 TextImageRelation = TextImageRelation.TextAboveImage
             };
@@ -52,7 +53,7 @@ namespace Freaks_memes
                 Font = new Font("Arial", 14, FontStyle.Bold),
                 ForeColor = Color.Green,
                 Dock = DockStyle.Fill,
-                Image = Image.FromFile("C://Users//1//source//repos//Freaks-memes//Images/victorpuzo.bmp"),
+                Image = Image.FromFile(Directory.GetCurrentDirectory() + "//Images/victorpuzo.bmp"),
                 ImageAlign = ContentAlignment.TopCenter,
                 TextImageRelation = TextImageRelation.TextAboveImage
             };
@@ -64,7 +65,7 @@ namespace Freaks_memes
                 Font = new Font("Arial", 14, FontStyle.Bold),
                 ForeColor = Color.BlueViolet,
                 Dock = DockStyle.Fill,
-                Image = Image.FromFile("C://Users//1//source//repos//Freaks-memes//Images/natamorpeh.bmp"),
+                Image = Image.FromFile(Directory.GetCurrentDirectory() + "//Images/natamorpeh.bmp"),
                 ImageAlign = ContentAlignment.TopCenter,
                 TextImageRelation = TextImageRelation.TextAboveImage
             };

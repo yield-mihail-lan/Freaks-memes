@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Freaks_memes
 {
@@ -25,7 +26,7 @@ namespace Freaks_memes
 
             var skin = new Label
             {
-                Image = Image.FromFile("C://Users//1//source//repos//Freaks-memes//Skinы/baretskyskin.png"),
+                Image = Image.FromFile(Directory.GetCurrentDirectory() + "//Skins/baretskyskin.png"),
                 Dock = DockStyle.Fill
             };
 
