@@ -23,7 +23,7 @@ namespace Freaks_memes
                 Dock = DockStyle.Fill
             };
 
-            //create and add GIF
+            //create skin
             //var skin = new Label
             //{
             //    Image = Image.FromFile("C://Users//1//source//repos//Freaks-memes//Images/baretsky.bmp")
